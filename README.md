@@ -209,3 +209,33 @@ Think:
 Structural = WHAT the system IS
 
 Behavioral = WHAT the system DOES
+
+
+
+
+
+
+git 
+
+
+Question	Command	Purpose
+Initialize repository	git init	Create local Git repository
+Add files	git add .	Stage all files
+Commit	git commit -m "message"	Save changes
+Check status	git status	See current changes
+Create branch	git branch feature	Create branch
+Switch branch	git switch feature	Change branch
+Create + switch	git switch -c feature	Create and switch
+Merge	git merge feature	Combine branches
+Stash	git stash	Temporarily save changes
+Stash restore	git stash pop	Restore stashed changes
+Restore	git restore file	Discard uncommitted file changes
+Revert	git revert ID	Undo a committed change safely
+Clone	git clone URL	Download repository
+Pull	git pull origin main	Get latest GitHub changes
+Push	git push -u origin main	Upload changes
+Remote	git remote -v	See GitHub connection
+Add remote	git remote add origin URL	Connect GitHub
+Ignore	.gitignore	Ignore unwanted files
+Differences	git diff	See changes
+History	git log --oneline	See commits

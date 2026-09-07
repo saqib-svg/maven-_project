@@ -27,3 +27,54 @@ docker ps -a
 docker login
 docker tag lmsimage <your-dockerhub-username>/lmsimage:latest
 docker push <your-dockerhub-username>/lmsimage:latest
+
+
+
+
+
+srs
+
+SRS — Things to include
+Title / Project Name
+Example: Library Management System
+Abstract / Introduction
+4–6 lines explaining what the system is, why it is needed, and what it does.
+Objectives
+Main goals of the system.
+Example: automate book issue/return, manage users, reduce manual work.
+Functional Requirements (FR)
+What the system should do.
+Write 5–10 points.
+Example:
+User can register/login.
+Admin can add/delete books.
+User can search books.
+System can issue and return books.
+System generates reports.
+Non-Functional Requirements (NFR)
+How the system should perform.
+Examples:
+Performance
+Security
+Reliability
+Usability
+Scalability
+Availability
+User / System Requirements
+Identify users/actors.
+Example: Admin, Student, Librarian
+Mention what each user can do.
+Hardware & Software Requirements
+Hardware: RAM, processor, storage.
+Software: OS, Java, MySQL, browser, etc.
+System Constraints / Assumptions
+Internet/network requirements.
+Authorized users only.
+Required software must be installed.
+Use Cases / System Features (if asked or if you have space)
+Login
+Registration
+Search
+Add/update/delete
+Generate reports
+Logout

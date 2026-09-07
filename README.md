@@ -78,3 +78,134 @@ Search
 Add/update/delete
 Generate reports
 Logout
+
+
+
+
+
+
+
+
+uml
+
+UML (Unified Modeling Language) is a standard visual language used to design, visualize, and document a software system.
+
+Instead of explaining a system only with text/code, UML uses diagrams to show things like:
+
+Who uses the system
+What the system does
+How objects interact
+How the system is structured
+How the system behaves over time
+Types of UML Diagrams
+
+UML has 14 standard diagrams, divided into 2 main categories:
+
+1. Structural Diagrams
+
+Show the static structure of the system — what the system is made of.
+
+2. Behavioral Diagrams
+
+Show the behavior/dynamic activities of the system — what the system does.
+
+1. Structural Diagrams — 7 types
+Diagram	What it shows
+Class Diagram ⭐	Classes, attributes, methods, and relationships
+Object Diagram	Objects/instances of classes at a particular time
+Component Diagram	Software components/modules and their dependencies
+Deployment Diagram	Hardware/server nodes and where software is deployed
+Package Diagram	Groups packages/modules and their relationships
+Composite Structure Diagram	Internal structure of a class/component
+Profile Diagram	Extends/customizes UML for specific domains
+Most important: Class Diagram
+
+Example:
+
+Student
+----------------
+- id
+- name
+----------------
++ register()
++ login()
+
+It tells us what classes exist and how they are related.
+
+2. Behavioral Diagrams — 7 types
+Diagram	What it shows
+Use Case Diagram ⭐	Users and the functions they perform
+Activity Diagram ⭐	Workflow/process of the system
+Sequence Diagram ⭐	Interaction between objects in time order
+State Machine Diagram	Different states of an object
+Communication Diagram	Communication between objects
+Interaction Overview Diagram	Overall flow of interactions
+Timing Diagram	Changes in object states with respect to time
+The 3 you should especially prepare
+
+For your type of practical/exam questions, focus strongly on:
+
+1. Use Case Diagram
+
+Shows:
+
+Who → does what
+
+Example for Library System:
+
+Student ───> Login
+Student ───> Search Book
+Student ───> Issue Book
+
+Librarian ───> Add Book
+Librarian ───> Remove Book
+
+Actor = user/external system
+
+2. Class Diagram
+
+Shows the structure of the system:
+
+Student
+   |
+   | borrows
+   ↓
+  Book
+
+with attributes and methods.
+
+3. Sequence Diagram
+
+Shows who communicates with whom and in what order.
+
+Example:
+
+Student → Login Page → Server → Database
+Student ← Login Page ← Server ← Database
+
+It focuses on the sequence of messages over time.
+
+4. Activity Diagram
+
+Shows the workflow:
+
+Start
+  ↓
+Enter Login
+  ↓
+Check Credentials
+  ↓
+Valid?
+ /   \
+Yes   No
+ ↓     ↓
+Home  Error
+ ↓
+End
+🧠 Easy way to remember
+
+Think:
+
+Structural = WHAT the system IS
+
+Behavioral = WHAT the system DOES
